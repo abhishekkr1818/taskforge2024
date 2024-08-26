@@ -26,9 +26,10 @@ html,body{
     overflow: hidden;
     width: 768px;
     max-width: 100%;
-    min-height: 480px;
+    min-height: 500px;
     
 }
+
 
 
 .container p{
@@ -83,8 +84,10 @@ html,body{
     border-radius: 3px;
     width: 100%;
     font-size: 14px;
+    height: 34px;
     
 }
+
 .form-container{
     position: absolute;
     top: 0%;
@@ -107,6 +110,7 @@ html,body{
     width: 50%;
     opacity: 0;
     z-index: 1;
+    
 }
 
 .container.active .sign-up{
