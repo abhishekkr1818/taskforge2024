@@ -1,8 +1,6 @@
-import express from "express";
-import { registerOrg } from "../controller/org.controller.js";
+import { registerOrg ,loginOrg } from "../controller/org.controller.js";
 import { Router } from "express";
 const router = Router()
-const orgRegister = router.post('/registerorg',registerOrg)
-export{
-    orgRegister
-}
+router.post('/login',loginOrg)
+router.post('/register',registerOrg)
+export default router
