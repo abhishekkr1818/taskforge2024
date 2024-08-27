@@ -5,6 +5,28 @@
     box-sizing: border-box;
 }
 
+body{
+    overflow-x: hidden;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    background-color: #ffffff;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #b6b1b1;
+    z-index: 1; /* Add this to ensure the sticky header stays on top */
+  }
+  
+  
+
+/* .head{
+    position:sticky;
+    top: 0;
+}
 header {
     display: flex;
     background-color: #ffffff;
@@ -12,7 +34,7 @@ header {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #b6b1b1;
-}
+} */
 
 .taskforge_home {
     height: 45px;
@@ -77,3 +99,77 @@ a.action_container:link {
     color:black;
 }
 
+/* footer */
+.footer_container {
+    padding: 30px 0px 40px 0px;
+    background: #FAFBFC;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer_column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_column h3 {
+    color: #282c3f;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.footer_column a {
+    color: #696b79;
+    font-size: 15px;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+/* main */
+.image-slider {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  .prev-btn {
+    left: 10px;
+  }
+  
+  .next-btn {
+    right: 10px;
+  }
+  
+  /* Hide all slides except the first one */
+  .slide {
+    display: none;
+  }
+  
+  .slide:first-child {
+    display: block;
+  }
+
+  
