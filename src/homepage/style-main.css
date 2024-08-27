@@ -20,21 +20,6 @@ body{
     border-bottom: 1px solid #b6b1b1;
     z-index: 1; /* Add this to ensure the sticky header stays on top */
   }
-  
-  
-
-/* .head{
-    position:sticky;
-    top: 0;
-}
-header {
-    display: flex;
-    background-color: #ffffff;
-    height: 80px;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #b6b1b1;
-} */
 
 .taskforge_home {
     height: 45px;
