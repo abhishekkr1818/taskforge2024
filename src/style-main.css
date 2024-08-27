@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Assistant,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    background-color: #ffffff;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #b6b1b1;
+}
+
+.taskforge_home {
+    height: 45px;
+}
+.logo_container {
+    margin-left: 4%;
+}
+.action_bar {
+    margin-right: 4%;
+    min-width: 200px;
+    justify-content: space-between;
+    font-weight: 500;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}  
+
+.action_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.action_name-project{
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+    padding: 2px;
+    background-color: blue;
+    border-radius: 5px;
+    border: none;
+}
+
+.nav_bar {
+    display: flex;
+    min-width: 500px;
+    justify-content: space-evenly;
+}
+.nav_bar a {
+    font-size: 14px;
+    letter-spacing: .3px;
+    color: #2a3f28;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 27.5px 0;
+    border-bottom: 5px solid #ffffff;
+}
+.nav_bar a:hover {
+    border-bottom: 4px solid #1964f0;
+}
+
+.nav_bar a sup {
+    font-size: 10px;
+}
+
+.action_container {
+    text-decoration: none;
+}
+a.action_container:link {
+    color:black;
+}
+
