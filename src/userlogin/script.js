@@ -10,8 +10,6 @@ loginBtn.addEventListener('click', () => {
     container.classList.remove("active");
 });
 
-<<<<<<< HEAD
-=======
 document.getElementById('loginForm').addEventListener('submit', async function(e) {
     e.preventDefault();
     const email = e.target.email.value;
@@ -67,4 +65,3 @@ document.getElementById('registerForm').addEventListener('submit', async functio
         console.error("Error during registration:", error);
     }
 });
->>>>>>> 1312b03c8992e88a57fe16c5c3e5bca116912bc4
