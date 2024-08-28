@@ -65,3 +65,18 @@ document.getElementById('registerForm').addEventListener('submit', async functio
         console.error("Error during registration:", error);
     }
 });
+
+
+function handleSignIn(event) {
+    event.preventDefault(); // Prevent the form from submitting the default way
+    const email = event.target.email.value;
+    const password = event.target.password.value;
+
+    if (email && password) {
+        // If both email and password are provided, redirect to the logout page or desired URL
+        location.href = 'user_logout.html';
+    } else {
+        // Handle form errors (e.g., missing email or password)
+        alert("Please enter both email and password.");
+    }
+}

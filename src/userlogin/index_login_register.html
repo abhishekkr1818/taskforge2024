@@ -11,7 +11,7 @@
     
     <div class="container" id="container">
         <div class="form-container sign-up">
-            <form>
+            <form onsubmit="handleSignIn(event)">
                 <h1>Create Account</h1>
                 <div class="social-icons">
                     <a href="#" class="icon"><i class="fa-brands fa-google"></i></a>
@@ -26,16 +26,15 @@
                 <input type="text" placeholder="username" name="username" required="">
                 <input type="email" placeholder="email" name="email" required="">
                 <input type="password" placeholder="password" name="password" required="">
-                <button>Sign Up</button>
+                <button type="submit">Sign Up</button>
             </form>
         </div>
         <div class="form-container sign-in">
-            <form>
+            <form onsubmit="handleSignIn(event)">
                 <h1>Sign In</h1>
                 <div class="social-icons">
                     <a href="#" class="icon"><i class="fa-brands fa-google"></i></a>
                     <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
-                    
                     <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
                 </div>
                 <span>or use your email and password for login</span>
@@ -43,7 +42,7 @@
                 <input type="email" name="email" placeholder="email" required="">
                 <input type="password" name="password" placeholder="password" required="">
                 <a href="#">Forget Your Password?</a>
-                <button>Sign In</button>
+                <button type="submit">Sign In</button>
             </form>
         </div>
         <div class="toggle-container">
