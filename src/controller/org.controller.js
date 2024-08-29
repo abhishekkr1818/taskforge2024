@@ -26,6 +26,8 @@ const registerOrg = asyncHandler(async (req, res) => {
         password: hashedPassword,
         username
     });
+    console.log(newOrg);
+    
     return res.status(201).json(new ApiResponse(201, newOrg, "Registered Successfully"));
 });
 const loginOrg = asyncHandler(async(req,res)=>{

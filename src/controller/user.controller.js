@@ -4,6 +4,8 @@ import { ApiError } from "../utils/ApiError.js";
 import { ApiResponse } from "../utils/ApiResponse.js";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
+import nodemailer from "nodemailer"
+import crypto from 'crypto';
 const registerUser = asyncHandler(async (req, res) => {
     const { firstName, middleName, lastName, username, email, password, profilePicture } = req.body;
 
@@ -59,6 +61,9 @@ const loginUser = asyncHandler(async (req, res) => {
     
    
 });
+
+
+
 export{
     loginUser,
     registerUser
