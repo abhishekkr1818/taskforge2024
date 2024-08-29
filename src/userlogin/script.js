@@ -116,7 +116,26 @@ try {
         // Handle errors
         alert(data.message || "Registration failed");
     }
+<<<<<<< HEAD
 } catch (error) {
     console.error("Error during registration:", error);
 }
 });
+=======
+});
+
+
+function handleSignIn(event) {
+    event.preventDefault(); // Prevent the form from submitting the default way
+    const email = event.target.email.value;
+    const password = event.target.password.value;
+
+    if (email && password) {
+        // If both email and password are provided, redirect to the logout page or desired URL
+        location.href = 'user_logout.html';
+    } else {
+        // Handle form errors (e.g., missing email or password)
+        alert("Please enter both email and password.");
+    }
+}
+>>>>>>> 714031c5f5c7aee81e9281c66cff0008f2da4c51
