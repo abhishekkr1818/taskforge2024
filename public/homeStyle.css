@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle, #0d0d0d, #1a1a1a);
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    animation: backgroundAnimation 15s ease infinite;
+}
+
+@keyframes backgroundAnimation {
+    0% { background: radial-gradient(circle, #0d0d0d, #1a1a1a); }
+    50% { background: radial-gradient(circle, #1a1a1a, #0d0d0d); }
+    100% { background: radial-gradient(circle, #0d0d0d, #1a1a1a); }
+}
+
+.welcome-container {
+    text-align: center;
+    max-width: 700px;
+    animation: fadeIn 2s ease-in-out;
+    transform: translateZ(0);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    background: linear-gradient(45deg, #00f260, #0575e6, #ff00cc, #3333ff);
+    background-size: 400%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    animation: gradientAnimation 8s ease infinite, subtleGlow 3s ease-in-out infinite alternate;
+    text-shadow: 0 0 8px rgba(0, 153, 255, 0.5), 0 0 15px rgba(0, 153, 255, 0.3);
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes subtleGlow {
+    from { text-shadow: 0 0 8px rgba(0, 153, 255, 0.5), 0 0 15px rgba(0, 153, 255, 0.3); }
+    to { text-shadow: 0 0 12px rgba(0, 153, 255, 0.3), 0 0 18px rgba(0, 153, 255, 0.2); }
+}
+
+p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    margin-bottom: 50px;
+    color: #b2bec3;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+    animation: subtleGlow 3s ease-in-out infinite alternate;
+}
+
+.login-button {
+    font-size: 1.2rem;
+    padding: 20px 40px;
+    background: linear-gradient(45deg, #ff6ec4, #7873f5, #00c6ff, #0072ff);
+    background-size: 400%;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    perspective: 1000px;
+    outline: none;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0, 153, 255, 0.5), 0 0 15px rgba(0, 153, 255, 0.3);
+    animation: buttonAnimation 8s ease infinite, subtleGlow 3s ease-in-out infinite alternate;
+}
+
+.login-button:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2), 0 0 15px rgba(0, 153, 255, 0.5);
+}
+
+@keyframes buttonAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.login-button:active {
+    transform: translateY(0);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
