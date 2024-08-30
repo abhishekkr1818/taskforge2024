@@ -18,7 +18,7 @@
 
 body {
     overflow-x: hidden;
-    background-image: url('images/business-8319519_1920.png'); /* Use only one background image */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0,0,0,0.55)),url('images/business-8319519_1920.png');
     background-size: cover; /* Ensure the image covers the entire body */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent repeating of the image */
@@ -222,7 +222,7 @@ text-align:left;
 .footer_column h3 {
    color: white;
     font-size: 14px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .footer_column a {
