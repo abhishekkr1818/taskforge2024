@@ -78,6 +78,7 @@ p {
     position: relative;
     perspective: 1000px;
     outline: none;
+    margin: 10px;
     z-index: 1;
     box-shadow: 0 0 10px rgba(0, 153, 255, 0.5), 0 0 15px rgba(0, 153, 255, 0.3);
     animation: buttonAnimation 8s ease infinite, subtleGlow 3s ease-in-out infinite alternate;
