@@ -18,7 +18,7 @@
 
 body {
     overflow-x: hidden;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0,0,0,0.55)),url('../images/business-8319519_1920.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50),rgba(0,0,0,0.70)),url('../images/business-8319519_1920.png');
     background-size: cover; /* Ensure the image covers the entire body */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent repeating of the image */

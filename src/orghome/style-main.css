@@ -5,28 +5,44 @@
     box-sizing: border-box;
 }
 
-/* body{
-    overflow-x: hidden;
-    background-image: url('images/business-8319519_1920.png'); 
-    background-size: cover;
-    background-position: center;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-} */
-
-
 body {
     overflow-x: hidden;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0,0,0,0.55)),url('images/business-8319519_1920.png');
-    background-size: cover; /* Ensure the image covers the entire body */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent repeating of the image */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50),rgba(0,0,0,0.70)),url('../images/business-8319519_1920.png');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
+
+/* body {
+  overflow-x: hidden;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.50),rgba(0,0,0,0.70)), url('../images/business-8319519_1920.png');
+  background-size: cover; 
+  background-position: center top;
+  background-repeat: no-repeat; 
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  height: 200vh;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  top: 100vh; 
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.50),rgba(0,0,0,0.70)), url('../images/image3.jpg');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  z-index: 1;
+} */
 
 /* .header {
     position: sticky;
@@ -182,7 +198,6 @@ text-align:left;
   margin-top: 3px;
 }
 
-
 .features {
   display: flex;
   justify-content: space-between;
@@ -198,6 +213,7 @@ text-align:left;
   padding: 10px;
   font-size: 1em;
 }
+
 
 
 /* footer */
@@ -239,5 +255,4 @@ text-align:left;
     text-decoration: none;
     background-color: #12151b;
   }
-
 
