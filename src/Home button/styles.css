@@ -1,0 +1,150 @@
+/* Basic styles */
+body {
+    background-image: url('p1back img.jpg');
+    background-size: cover; /* Ensures the image covers the entire page */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: white;
+} */
+
+/* Navbar styles */
+.navbar {
+    background-color: #292929;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-logo {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    padding-bottom: 3px;
+}
+
+.nav-links li a:hover {
+    color: #ddd;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Main content styles */
+.main-content {
+    padding: 20px;
+    color: red;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+/* Grid and side menu styles */
+.container {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    flex: 3;
+}
+
+.grid-item {
+    background-color: #292929;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+    color: white;
+}
+
+.grid-item:hover {
+    background-color: #3a3a3a;
+    transform: translateY(-5px); /* Slight lift effect */
+}
+
+.grid-item img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.grid-item:hover img {
+    transform: scale(1.05); /* Slight zoom-in effect */
+}
+
+.grid-item p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Side menu styles */
+.side-menu {
+    flex: 1;
+    margin-left: 20px;
+    background-color: #292929;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.side-menu h3 {
+    margin-top: 0;
+}
+
+.side-menu ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.side-menu ul li {
+    margin-bottom: 10px;
+}
+
+.side-menu ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+    display: block;
+}
+
+.side-menu ul li a:hover {
+    color: #ddd;
+    padding-left: 5px; /* Slight move to right effect */
+}
