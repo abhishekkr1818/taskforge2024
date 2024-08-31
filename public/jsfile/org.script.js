@@ -28,7 +28,8 @@ document.querySelector('#loginForm').addEventListener('submit',async (e)=>{
             
         } 
         else{
-            alert("Invalid Login Credentials")
+            //alert("Invalid Login Credentials")
+            window.location.href='/loginfailed'
         }
     } catch (error) {
         console.log("Error during login",error);

@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #000000;
+    background-image: url('p1back.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.post-job {
+    background-color: #333333;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 600px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.post-job h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #ff0000 0%, #29ad57 100%);
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+    font-weight: bold;
+}
+
+.post-job label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: white;
+}
+
+.post-job input {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color: #444444;
+    color: white;
+}
+
+.post-job button {
+    background-color: #ffffff;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+.post-job button:hover {
+    background-color: #f40930;
+    color: white;
+}

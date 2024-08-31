@@ -28,7 +28,8 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
         if (response.ok) {   
             window.location.href='/homeuser'
         } else {
-            alert(data.message || "Login failed");
+            //alert(data.message || "Login failed");
+            window.location.href='/loginfailed'
         }
     } catch (error) {
         console.error("Error during login:", error);
@@ -52,10 +53,8 @@ document.getElementById('registerForm').addEventListener('submit', async functio
         const data = await response.json();
 
         if (response.ok) {
-            // Handle successful registration, e.g., redirect to login
             alert("Registration Successful!");
         } else {
-            // Handle errors
             alert(data.message || "Registration failed");
         }
     } catch (error) {

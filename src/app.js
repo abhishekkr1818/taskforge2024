@@ -33,6 +33,12 @@ app.get('/homeuser',(req,res)=>{
 app.get('/homeorg',(req,res)=>{
     res.render('org.home.page.ejs')
 })
+app.get('/postjobs',(req,res)=>{
+    res.render('post.job.ejs')
+})
+app.get('/loginfailed',(req,res)=>{
+    res.render('log.failed.ejs')
+})
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Server running at http://localhost:${PORT}`);
