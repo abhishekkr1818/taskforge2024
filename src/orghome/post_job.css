@@ -1,75 +1,18 @@
-/* body {
-    font-family: Arial, sans-serif;
-    background-color: #6eb6f1;
+/* * {
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    font-family: Assistant,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    box-sizing: border-box;
 }
-
-.post-job h1 {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-bottom: 20px; 
-    font-size: 28px; 
-    color: black; 
-    text-align: center; 
-    padding: 10px; 
-    background: linear-gradient(135deg, #ff0099 0%, #cdfa6d 100%); 
-    border-radius: 5px; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    font-weight: bold; 
-}
-
-.post-job {
-    background-color: #ffffff;
-    border: 2px solid #007bff;
-    border-radius: 10px;
-    padding: 20px;
-    width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.post-job label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-}
-
-.post-job input {
-    width: calc(100% - 20px);
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #007bff;
-    border-radius: 5px;
-}
-
-.post-job button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    display: block;
-    margin: 0 auto;
-    font-size: 16px;
-}
-
-.post-job button:hover {
-    background-color: #d9556b;
-} */
 
 
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: #6eb6f1;
-    background-image: url('Homebutton/p1back\ img.jpg'); /* Replace with the path to your image */
-    background-size: cover; /* Ensure the image covers the entire body */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent repeating the image */
-    margin: 0;
+    background-image: url('../Homebutton/p1back\ img.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
     padding: 0;
     display: flex;
     justify-content: center;
@@ -130,4 +73,81 @@ body {
 }
 
 
+ */
 
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #000000;
+    background-image: url('../images/p1back\ img.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.post-job {
+    background-color: #333333;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 600px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.post-job h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #ff0000 0%, #29ad57 100%);
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+    font-weight: bold;
+}
+
+.post-job label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: white;
+}
+
+.post-job input {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color: #444444;
+    color: white;
+}
+
+.post-job button {
+    background-color: #ffffff;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+.post-job button:hover {
+    background-color: #f40930;
+    color: white;
+}
