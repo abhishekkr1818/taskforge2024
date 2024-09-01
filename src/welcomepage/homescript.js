@@ -8,6 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
     const loginButton = document.querySelector('#loginButtonOrg');
     loginButton.addEventListener('click', () => {       
-        window.location.href = '/loginOrg';
+        window.location.href = '/loginorg';
     });
 });
