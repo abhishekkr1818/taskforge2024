@@ -13,6 +13,23 @@ const jobPosting = asyncHandler(async(req,res)=>{
 
 
 })
+const findjobs = asyncHandler(async (req, res) => {
+    const { title, domain } = req.query;
+
+    const query = {};
+
+    if (title) {
+        query.jobTitle = { $regex: title, $options: 'i' };
+    }
+
+    if (domain) {
+        query.domain = { $regex: domain, $options: 'i' };
+    }
+
+    const jobs = await Job.find(query);
+    return res.status(200).json(new ApiResponse(200, jobs, "Jobs found sucess"));
+});
 export {
     jobPosting,
+    findjobs
 }
