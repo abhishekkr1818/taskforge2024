@@ -5,6 +5,7 @@ import userRoute from "./routes/user.route.js";
 import orgRoute from "./routes/org.route.js";
 import jobRoute from "./routes/job.route.js"
 import { findjobs } from "./controller/job.controller.js";
+import applytojobb from "./routes/apply.job.route.js"
 dotenv.config();
 connectDB();
 const app = express();
@@ -19,6 +20,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/api/v1/user', userRoute);
 app.use('/api/v1/company', orgRoute);
 app.use('/api/v1/job',jobRoute)
+app.use('/api/v1/applytojob',applytojobb)
 app.get('/findjob',(req,res)=>{
     res.render('find.job.ejs')
 })
