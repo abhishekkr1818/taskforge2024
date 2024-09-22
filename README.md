@@ -1,4 +1,3 @@
-# hackheritage2024
 TaskForge :- An user-friendly freelancing platform for connecting freelancers with clients, considering various constraints like skill matching, availability, project deadlines, and budget.
 
 USE CASES :- Clients: Efficiently match with skilled freelancers and streamlinethe hiring process for improved project outcomes.
